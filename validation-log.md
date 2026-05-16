@@ -32,3 +32,4 @@ python3 /home/kimwoonggon/.codex/skills/.system/skill-creator/scripts/quick_vali
 - Unit tests: passed. `Ran 2 tests ... OK`.
 - Skill validation: passed. `Skill is valid!`.
 - Startup application PDF demo: passed. Generated `data/startup-application-pdf/application.pdf`, extracted it into `data/startup-pdf-package`, produced `outputs/startup-pdf-report.html`, and captured `outputs/startup-pdf-report.png` with embedded Korean font rendering.
+- Installer dry run: passed. `scripts/install_skill.sh` installs the skill into `${CODEX_HOME:-$HOME/.codex}/skills/audit-korean-startup-grant` and validates it when the system validator is present.
