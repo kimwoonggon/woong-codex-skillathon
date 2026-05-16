@@ -1,0 +1,121 @@
+{
+  "source": {
+    "title": "2026년 초기창업패키지(일반형) 창업기업 모집 공고",
+    "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000117819"
+  },
+  "checked_at": "2026-05-16T16:54:33",
+  "today": "2026-05-16",
+  "passed": false,
+  "summary": {
+    "high": 3,
+    "medium": 6,
+    "low": 0,
+    "missing_required_documents": 1,
+    "privacy_findings": 2,
+    "confirmation_needed": 3
+  },
+  "deadline": {
+    "deadline": "2026-02-13",
+    "status": "closed",
+    "days_left": -92
+  },
+  "budget": {
+    "total_krw": 110000000,
+    "max_total_budget": 100000000,
+    "max_single_item_budget": 50000000,
+    "rows": [
+      {
+        "category": "개발비",
+        "item": "AI 분류 모델 고도화 외주",
+        "amount_krw": 55000000,
+        "execution_month": "2026-06",
+        "note": "단일 항목 한도 초과 데모"
+      },
+      {
+        "category": "인프라",
+        "item": "클라우드 사용료",
+        "amount_krw": 25000000,
+        "execution_month": "2026-07",
+        "note": "실증 환경"
+      },
+      {
+        "category": "마케팅",
+        "item": "베타 고객 온보딩 캠페인",
+        "amount_krw": 20000000,
+        "execution_month": "2026-08",
+        "note": "시장 검증"
+      },
+      {
+        "category": "인증",
+        "item": "보안 컨설팅",
+        "amount_krw": 10000000,
+        "execution_month": "2026-09",
+        "note": "일정 확인 필요"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "code": "MISSING_DOCUMENT",
+      "severity": "high",
+      "message": "필수 제출서류가 누락되었습니다: 중소기업확인서",
+      "evidence": "submitted_files=['01_사업신청서.pdf', '02_사업계획서.pdf', '03_사업자등록증명.pdf', '04_개인정보 수집 이용 동의서.pdf', '05_발표자료.pdf']"
+    },
+    {
+      "code": "DEADLINE_PASSED",
+      "severity": "high",
+      "message": "접수마감일이 지났습니다.",
+      "evidence": "deadline=2026-02-13, today=2026-05-16"
+    },
+    {
+      "code": "SINGLE_ITEM_OVER_LIMIT",
+      "severity": "medium",
+      "message": "단일 예산 항목이 한도 50,000,000원를 초과했습니다.",
+      "evidence": "row=1, item=AI 분류 모델 고도화 외주, amount=55,000,000원"
+    },
+    {
+      "code": "TOTAL_BUDGET_OVER_LIMIT",
+      "severity": "high",
+      "message": "신청 예산 총액이 한도 100,000,000원를 초과했습니다.",
+      "evidence": "total=110,000,000원, limit=100,000,000원"
+    },
+    {
+      "code": "PRIVACY_PATTERN_FOUND",
+      "severity": "medium",
+      "message": "개인정보 또는 내부 식별정보 패턴이 감지되었습니다: email, phone",
+      "evidence": "application.md:11: - 테스트용 대표 연락처: 010-****-5678 / f***@example.com"
+    },
+    {
+      "code": "PRIVACY_PATTERN_FOUND",
+      "severity": "medium",
+      "message": "개인정보 또는 내부 식별정보 패턴이 감지되었습니다: business_registration_number",
+      "evidence": "application.md:12: - 테스트용 사업자등록번호: 123-**-67890"
+    },
+    {
+      "code": "CONFIRMATION_NEEDED",
+      "severity": "medium",
+      "message": "확정되지 않은 계획 또는 근거가 있습니다.",
+      "evidence": "application.md:23: - 해외 인증 일정은 추후 확정"
+    },
+    {
+      "code": "CONFIRMATION_NEEDED",
+      "severity": "medium",
+      "message": "확정되지 않은 계획 또는 근거가 있습니다.",
+      "evidence": "application.md:29: ## 확인 필요"
+    },
+    {
+      "code": "CONFIRMATION_NEEDED",
+      "severity": "medium",
+      "message": "확정되지 않은 계획 또는 근거가 있습니다.",
+      "evidence": "application.md:31: 신규 보안인증 취득 여부는 협의 필요 상태다."
+    }
+  ],
+  "recommended_next_actions": [
+    "누락된 필수서류를 제출파일 목록에 추가하고 파일명을 공고 서류명과 맞추세요.",
+    "접수 가능 여부를 공고 담당기관에 확인하세요.",
+    "총 신청 예산을 지원 한도 이하로 조정하세요.",
+    "단일 예산 항목을 분리하거나 한도 이하로 조정하세요.",
+    "제출 전 개인정보와 내부 식별정보를 필요한 범위만 남기고 마스킹하세요.",
+    "미정 또는 협의 필요 항목의 담당자, 일정, 근거를 확정하세요."
+  ]
+}

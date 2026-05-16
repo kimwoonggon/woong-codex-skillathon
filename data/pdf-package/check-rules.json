@@ -1,0 +1,21 @@
+{
+  "source_url": "https://grant-documents.thevc.kr/download/289472_%28%EA%B3%B5%EA%B3%A0%EB%AC%B8%292026%EB%85%84%EC%A0%84%EB%B6%81%ED%98%95%EC%B0%BD%EC%97%85%ED%8C%A8%ED%82%A4%EC%A7%80%EC%B0%BD%EC%97%85%EA%B8%B0%EC%97%85%EB%AA%A8%EC%A7%91%EA%B3%B5%EA%B3%A0%EB%AC%B8_%EA%B5%AD%EB%A6%BD%EA%B5%B0%EC%82%B0%EB%8C%80%ED%95%99%EA%B5%90.pdf",
+  "source_title": "2026년 전북형 창업패키지 창업기업 모집 공고",
+  "required_documents": [
+    "사업신청서",
+    "사업계획서",
+    "사업자등록증명",
+    "중소기업확인서",
+    "개인정보 수집 이용 동의서"
+  ],
+  "optional_documents": [
+    "발표자료",
+    "아이템 도면",
+    "설계도"
+  ],
+  "application_deadline": "2026-02-20",
+  "max_total_budget": 60000000,
+  "max_single_item_budget": 50000000,
+  "currency": "KRW",
+  "rule_note": "Inferred from PDF text for mock validation; confirm against the official notice before real submission."
+}

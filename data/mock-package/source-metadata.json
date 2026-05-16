@@ -1,0 +1,5 @@
+{
+  "generated_from": "data/crawled-notice.json",
+  "source_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000117819",
+  "package_note": "Synthetic package for Skillathon validation; not a real application."
+}

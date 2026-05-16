@@ -1,0 +1,4 @@
+interface:
+  display_name: "Korean Startup Grant Audit"
+  short_description: "Korean startup grant package preflight checks"
+  default_prompt: "Use $audit-korean-startup-grant to check this Korean startup grant application package before submission."

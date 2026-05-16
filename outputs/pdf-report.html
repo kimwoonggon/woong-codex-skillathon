@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>지원사업 신청 패키지 점검 리포트</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #667085;
+      --line: #d7dde8;
+      --paper: #ffffff;
+      --bg: #f6f8fb;
+      --brand: #166534;
+      --danger: #b42318;
+      --warn: #b54708;
+      --ok: #027a48;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    header {
+      padding: 28px 36px 18px;
+      background: #0f1f17;
+      color: #fff;
+      border-bottom: 4px solid #39a96b;
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    h2 { margin: 0 0 14px; font-size: 18px; }
+    h3 { margin: 0 0 10px; font-size: 15px; }
+    .meta { color: #c7d7cb; margin: 0; }
+    main { padding: 24px 36px 36px; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+    .panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .span-4 { grid-column: span 4; }
+    .span-6 { grid-column: span 6; }
+    .span-8 { grid-column: span 8; }
+    .span-12 { grid-column: span 12; }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    .status.review { background: #fee4e2; color: var(--danger); }
+    .status.pass { background: #d1fadf; color: var(--ok); }
+    .metric { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid #edf1f7; }
+    .metric:last-child { border-bottom: 0; }
+    .metric span:first-child { color: var(--muted); }
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 360px;
+      overflow: auto;
+      margin: 0;
+      padding: 14px;
+      background: #f9fafb;
+      border: 1px solid #e4e7ec;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+    .issue {
+      border: 1px solid var(--line);
+      border-left-width: 5px;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #fff;
+    }
+    .issue-top { display: flex; justify-content: space-between; gap: 12px; font-weight: 700; }
+    .issue p { margin: 8px 0; }
+    .issue small { color: var(--muted); }
+    .sev-high { border-left-color: var(--danger); }
+    .sev-medium { border-left-color: var(--warn); }
+    .sev-low { border-left-color: #475467; }
+    ul { margin: 0; padding-left: 18px; }
+    .empty { color: var(--muted); margin: 0; }
+    @media (max-width: 900px) {
+      header, main { padding-left: 18px; padding-right: 18px; }
+      .span-4, .span-6, .span-8 { grid-column: span 12; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>지원사업 신청 패키지 점검 리포트</h1>
+    <p class="meta">2026년 전북형 창업패키지 창업기업 모집 공고 · 2026-05-16</p>
+  </header>
+  <main class="grid">
+    <section class="panel span-4">
+      <h2>처리 결과</h2>
+      <p><span class="status review">검토 필요</span></p>
+      <div class="metric"><span>High</span><strong>3</strong></div>
+      <div class="metric"><span>Medium</span><strong>6</strong></div>
+      <div class="metric"><span>누락 필수서류</span><strong>1</strong></div>
+      <div class="metric"><span>개인정보 패턴</span><strong>2</strong></div>
+      <div class="metric"><span>확인 필요</span><strong>3</strong></div>
+    </section>
+    <section class="panel span-4">
+      <h2>기한</h2>
+      <div class="metric"><span>마감일</span><strong>2026-02-20</strong></div>
+      <div class="metric"><span>상태</span><strong>closed</strong></div>
+      <div class="metric"><span>남은 일수</span><strong>-85</strong></div>
+    </section>
+    <section class="panel span-4">
+      <h2>예산</h2>
+      <div class="metric"><span>신청 총액</span><strong>110,000,000원</strong></div>
+      <div class="metric"><span>총액 한도</span><strong>60,000,000원</strong></div>
+      <div class="metric"><span>단일 항목 한도</span><strong>50,000,000원</strong></div>
+    </section>
+    <section class="panel span-6">
+      <h2>문서 이전: 공고/제출 목록</h2>
+      <h3>공고 요약</h3>
+      <pre>2026년 전북형 창업패키지 창업기업 모집 공고  유망 창업아이템 및 고급기술을 보유한 창업기업을 대상으로 사업 성장과 도약 발판을 지원하는 『2026년 전북형 창업패키지』에 참여할기업을다음과 같이 모집합니다. 2026년 1월 28일국립군산대학교 창업지원단장1 모집개요□ 사업목적 : 유망 창업아이템을 보유한 창업기업을 대상으로 사업 성장과 도약 발판을 지원□ 지원대상 : 우수한 기술과 비즈니스모델을 보유한 공고일 기준 5년이내의 전북특별자치도내 본사를 보유한 창업기업□ 지원규모 : 총 15개사(최대 60백만원,공급가액 기준)□ 지원내용 : 사업화 지원금 및 특화 프로그램 지원2 신청자격 및 제외 대상□ 신청자격◦｢
+중소기업기본법｣
+제2조제1항에 따른 중소기업의 대표자이자, ｢
+중소기업창업 지원법｣
+제2조제2호 및 제3호에 따른 창업자이며,사업장 소재지가 전북특별자치도인 5년(공고일 기준)이내 창업기업대표자  * 신청자격 기준일(공고일 기준 창업 5년이내 기업): 2021년 1월 28일 이후 창업기업(1월 28일 포함)-개인사업자 :사업자등록증명원 상 ‘개업연월일’기준-법인사업자 :법인등기사항전부증명서(법인등기부등본)상 ‘회사성립연월일’기준  * 공동대표 또는 각자대표로 구성된 기업의 경우, 대표자 전원이 ‘신청자격’에 해당되고, ‘신청 제외 대상’에 해당되지 않아야 함  * 법인기업 대표자의 경우 실질경영주로 최대주주여야 함
+
+□ 창업인정 기준◦다수의 사업자(개인,법인)를 소지하고 있는 경우,「중소기업창업 지원법시행령」에따라 신청자격 적합여부 결정 ([참고 1]창업기업 확인 기준 참조)    * 업종은 ‘한국표준산업분류(제10차)’를 기준으로 하며, 세세분류(5자리)가 모두 일치하면 “동종업종”(통계청 통계분류포털(kssc.kostat.go.kr) 참조)□ 신청(지원) 제외대상☞금융기관 등으로부터 채무불이행으로 규제 중인 자(기업)   * 단, 신청 접수 마감일(’26.02.20.) 혹은 주관기관이 제시한 기한까지 채무변제 완료 후 증빙이 가능한 자(기업), 신용회복위원회의 프리워크아웃, 개인워크아웃 제도에서 채무조정합의서를 체결한 경우, 법원의 개인회생제도에서 변제계획인가를 받거나 파산면책 선고자, 회생인가를 받은 기업, 중소벤처기업진흥공단, 중소기업기술정보진흥원, 신용보증기금, 기술보증기금 등으로부터 재창업자금을 지원 받은 자(기업) 등 정부‧공공기관으로부터 재기지원 필요성을 인정받은 자(기업)는 신청(지원) 가능☞국세 또는 지방세 체납(징수유예 포함)중인 자(기업)   * 단, 세금 분납계획에 따른 성실납부기업(체납처분유예신청), 신청 접수 마감일까지 국세, 지방세 등의 특수채무 변제 후 증빙이 가능한 자(기업)는 신청 가능☞「중소기업창업 지원법 시행령」제4조(창업에서 제외되는 업종)의 업종을영위하고 있거나 또는 영위하고자 하는 자(기업)     * 지원제외 대상 업종 : 일반유흥주점업, 무도유흥주점업, 기타 사행시설 관리 및 운영업, 제1호부터 제3호까지의 규정에 준하는 업종으로서 중소벤처기업부령으로 정하는 업종    ** 대상 업종의 세부사항은 제10차 한국표준산업분류코드(통계청, kssc.kostat.go.kr) 참고☞신청일 현재 휴업 중인 기업☞지자체 지원사업 참여제한 중인 자(기업)☞동 사업 주관기
+...</pre>
+      <h3>제출 파일</h3>
+      <pre>01_사업신청서.pdf
+02_사업계획서.pdf
+03_사업자등록증명.pdf
+04_개인정보 수집 이용 동의서.pdf
+05_발표자료.pdf</pre>
+    </section>
+    <section class="panel span-6">
+      <h2>문서 이전: 신청서</h2>
+      <pre># 샘플AI 주식회사 정부지원사업 신청서
+
+&gt; 이 신청서는 검증 데모를 위한 합성 데이터입니다. 실제 기업 또는 개인 정보가 아닙니다.
+
+## 기업 개요
+
+- 기업명: 샘플AI 주식회사
+- 업력: 2년 4개월
+- 사업분야: 고객지원 자동화 SaaS
+- 대표자: 홍길동(가명)
+- 테스트용 대표 연락처: 010-1234-5678 / founder@example.com
+- 테스트용 사업자등록번호: 123-45-67890
+
+## 과제 목표
+
+소상공인 고객센터 문의를 자동 분류하고, 반복 문의 답변 초안을 생성하는 한국어 AI 상담 운영 도구를 고도화한다.
+
+## 추진 일정
+
+- 1개월차: VOC 분류 모델 개선
+- 2개월차: 상담 템플릿 추천 기능 개발
+- 3개월차: 베타 고객 5곳 실증
+- 해외 인증 일정은 추후 확정
+
+## 예산 설명
+
+총 110,000,000원의 사업화 자금을 신청한다. 클라우드 인프라, 외주 개발, 마케팅 실증비를 포함한다.
+
+## 확인 필요
+
+신규 보안인증 취득 여부는 협의 필요 상태다.</pre>
+    </section>
+    <section class="panel span-8">
+      <h2>문서 처리 결과</h2>
+      
+            <article class="issue sev-high">
+              <div class="issue-top">
+                <span>high</span>
+                <code>MISSING_DOCUMENT</code>
+              </div>
+              <p>필수 제출서류가 누락되었습니다: 중소기업확인서</p>
+              <small>submitted_files=[&#x27;01_사업신청서.pdf&#x27;, &#x27;02_사업계획서.pdf&#x27;, &#x27;03_사업자등록증명.pdf&#x27;, &#x27;04_개인정보 수집 이용 동의서.pdf&#x27;, &#x27;05_발표자료.pdf&#x27;]</small>
+            </article>
+            
+
+            <article class="issue sev-high">
+              <div class="issue-top">
+                <span>high</span>
+                <code>DEADLINE_PASSED</code>
+              </div>
+              <p>접수마감일이 지났습니다.</p>
+              <small>deadline=2026-02-20, today=2026-05-16</small>
+            </article>
+            
+
+            <article class="issue sev-medium">
+              <div class="issue-top">
+                <span>medium</span>
+                <code>SINGLE_ITEM_OVER_LIMIT</code>
+              </div>
+              <p>단일 예산 항목이 한도 50,000,000원를 초과했습니다.</p>
+              <small>row=1, item=AI 분류 모델 고도화 외주, amount=55,000,000원</small>
+            </article>
+            
+
+            <article class="issue sev-high">
+              <div class="issue-top">
+                <span>high</span>
+                <code>TOTAL_BUDGET_OVER_LIMIT</code>
+              </div>
+              <p>신청 예산 총액이 한도 60,000,000원를 초과했습니다.</p>
+              <small>total=110,000,000원, limit=60,000,000원</small>
+            </article>
+            
+
+            <article class="issue sev-medium">
+              <div class="issue-top">
+                <span>medium</span>
+                <code>PRIVACY_PATTERN_FOUND</code>
+              </div>
+              <p>개인정보 또는 내부 식별정보 패턴이 감지되었습니다: email, phone</p>
+              <small>application.md:11: - 테스트용 대표 연락처: 010-****-5678 / f***@example.com</small>
+            </article>
+            
+
+            <article class="issue sev-medium">
+              <div class="issue-top">
+                <span>medium</span>
+                <code>PRIVACY_PATTERN_FOUND</code>
+              </div>
+              <p>개인정보 또는 내부 식별정보 패턴이 감지되었습니다: business_registration_number</p>
+              <small>application.md:12: - 테스트용 사업자등록번호: 123-**-67890</small>
+            </article>
+            
+
+            <article class="issue sev-medium">
+              <div class="issue-top">
+                <span>medium</span>
+                <code>CONFIRMATION_NEEDED</code>
+              </div>
+              <p>확정되지 않은 계획 또는 근거가 있습니다.</p>
+              <small>application.md:23: - 해외 인증 일정은 추후 확정</small>
+            </article>
+            
+
+            <article class="issue sev-medium">
+              <div class="issue-top">
+                <span>medium</span>
+                <code>CONFIRMATION_NEEDED</code>
+              </div>
+              <p>확정되지 않은 계획 또는 근거가 있습니다.</p>
+              <small>application.md:29: ## 확인 필요</small>
+            </article>
+            
+
+            <article class="issue sev-medium">
+              <div class="issue-top">
+                <span>medium</span>
+                <code>CONFIRMATION_NEEDED</code>
+              </div>
+              <p>확정되지 않은 계획 또는 근거가 있습니다.</p>
+              <small>application.md:31: 신규 보안인증 취득 여부는 협의 필요 상태다.</small>
+            </article>
+            
+    </section>
+    <section class="panel span-4">
+      <h2>제출 전 액션아이템</h2>
+      <ul><li>누락된 필수서류를 제출파일 목록에 추가하고 파일명을 공고 서류명과 맞추세요.</li>
+<li>접수 가능 여부를 공고 담당기관에 확인하세요.</li>
+<li>총 신청 예산을 지원 한도 이하로 조정하세요.</li>
+<li>단일 예산 항목을 분리하거나 한도 이하로 조정하세요.</li>
+<li>제출 전 개인정보와 내부 식별정보를 필요한 범위만 남기고 마스킹하세요.</li>
+<li>미정 또는 협의 필요 항목의 담당자, 일정, 근거를 확정하세요.</li></ul>
+    </section>
+    <section class="panel span-12">
+      <h2>출처</h2>
+      <p>https://grant-documents.thevc.kr/download/289472_%28%EA%B3%B5%EA%B3%A0%EB%AC%B8%292026%EB%85%84%EC%A0%84%EB%B6%81%ED%98%95%EC%B0%BD%EC%97%85%ED%8C%A8%ED%82%A4%EC%A7%80%EC%B0%BD%EC%97%85%EA%B8%B0%EC%97%85%EB%AA%A8%EC%A7%91%EA%B3%B5%EA%B3%A0%EB%AC%B8_%EA%B5%AD%EB%A6%BD%EA%B5%B0%EC%82%B0%EB%8C%80%ED%95%99%EA%B5%90.pdf</p>
+      <p class="empty">이 HTML은 제출 전 형식과 리스크 점검용입니다. 최종 판단은 담당기관 공고와 전문가 검토를 따르세요.</p>
+    </section>
+  </main>
+</body>
+</html>
