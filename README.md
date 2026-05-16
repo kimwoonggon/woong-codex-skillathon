@@ -26,6 +26,15 @@ https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_00000000
 
 결과는 `outputs/example-report.html`을 브라우저에서 열어 확인합니다. PDF 공고까지 테스트하려면 `outputs/pdf-report.html`을 확인합니다.
 
+스타트업이 실제로 지원한다고 가정한 mock 신청서 PDF도 포함했습니다.
+
+- mock 신청서 PDF: `data/startup-application-pdf/application.pdf`
+- PDF 추출 패키지: `data/startup-pdf-package/`
+- 점검 결과 HTML: `outputs/startup-pdf-report.html`
+- 한글 폰트가 적용된 결과 이미지: `outputs/startup-pdf-report.png`
+
+![Startup application PDF audit result](outputs/startup-pdf-report.png)
+
 ## 핵심 파일
 
 - `skills/audit-korean-startup-grant/SKILL.md`: Codex가 따라야 할 절차와 guardrails

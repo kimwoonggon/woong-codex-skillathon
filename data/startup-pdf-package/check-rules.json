@@ -1,0 +1,19 @@
+{
+  "source_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000117819",
+  "source_title": "2026년 초기창업패키지(일반형) 창업기업 모집 공고",
+  "required_documents": [
+    "사업신청서",
+    "사업계획서",
+    "사업자등록증명",
+    "중소기업확인서",
+    "개인정보 수집 이용 동의서"
+  ],
+  "optional_documents": [
+    "발표자료",
+    "디자인 또는 설계도면"
+  ],
+  "application_deadline": "2026-02-13",
+  "max_total_budget": 100000000,
+  "max_single_item_budget": 50000000,
+  "currency": "KRW"
+}

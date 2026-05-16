@@ -79,6 +79,12 @@ def render(result: dict[str, Any], package_dir: Path | None) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>지원사업 신청 패키지 점검 리포트</title>
   <style>
+    @font-face {{
+      font-family: "Noto Sans KR Local";
+      src: url("../assets/fonts/NotoSansCJKkr-Regular.otf") format("opentype");
+      font-weight: 400;
+      font-style: normal;
+    }}
     :root {{
       --ink: #17202a;
       --muted: #667085;
@@ -95,7 +101,7 @@ def render(result: dict[str, Any], package_dir: Path | None) -> str:
       margin: 0;
       background: var(--bg);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Noto Sans KR Local", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.5;
     }}
     header {{
@@ -134,6 +140,7 @@ def render(result: dict[str, Any], package_dir: Path | None) -> str:
     .metric:last-child {{ border-bottom: 0; }}
     .metric span:first-child {{ color: var(--muted); }}
     pre {{
+      font-family: "Noto Sans KR Local", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       white-space: pre-wrap;
       word-break: break-word;
       max-height: 360px;
@@ -144,6 +151,9 @@ def render(result: dict[str, Any], package_dir: Path | None) -> str:
       border: 1px solid #e4e7ec;
       border-radius: 6px;
       font-size: 13px;
+    }}
+    code {{
+      font-family: "Noto Sans KR Local", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }}
     .issue {{
       border: 1px solid var(--line);
