@@ -22,16 +22,9 @@ https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_00000000
 - outputs/preflight-result.json
 - outputs/example-report.md
 - outputs/example-report.html
-- outputs/example-report.png
 ```
 
-결과는 `outputs/example-report.html`을 브라우저에서 열어 확인합니다. GitHub에서는 아래 캡처로 실행 결과를 바로 볼 수 있습니다.
-
-![HTML report screenshot](outputs/example-report.png)
-
-PDF 공고까지 테스트하려면 `outputs/pdf-report.html` 또는 아래 캡처를 확인합니다.
-
-![PDF report screenshot](outputs/pdf-report.png)
+결과는 `outputs/example-report.html`을 브라우저에서 열어 확인합니다. PDF 공고까지 테스트하려면 `outputs/pdf-report.html`을 확인합니다.
 
 ## 핵심 파일
 
