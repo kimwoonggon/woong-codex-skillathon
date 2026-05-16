@@ -10,6 +10,14 @@
 
 ## 빠른 사용법
 
+### 사용방법 요약
+
+1. Codex에 `Use $audit-korean-startup-grant ...` 프롬프트를 입력합니다.
+2. Codex가 공개 공고 또는 PDF 신청서를 읽고 `preflight_check.py`를 실행합니다.
+3. 결과는 `outputs/*.md`, `outputs/*.html`, `outputs/*.json`에서 확인합니다.
+
+가장 빠른 확인 파일은 `outputs/startup-pdf-report.html`입니다. 이 파일은 mock 스타트업 신청서 PDF를 읽어 점검한 결과이며, 브라우저에서 열면 처리 전 문서와 점검 결과가 함께 보입니다.
+
 Codex에서 아래 프롬프트를 실행하면 공개 공고 크롤링, mock data 생성, 점검, Markdown/HTML 리포트 생성을 한 번에 재현할 수 있습니다.
 
 ```text
